@@ -19,7 +19,7 @@ body{
 
 .ascii-art pre {
     color: #f0f0f0;
-    font-size: 15px;
+    font-size: 1vw;
 }
 
 .terminal-body {
@@ -30,28 +30,11 @@ body{
     top: -55px;
 }
 
-.command-line {
-    background-color: transparent;
-    font-size: 16px;
-    line-height: 1.5;
-    display: flex;
-    align-items: left;
-    margin-top: 0px;
-}
-
-.command-line span {
-    color: #f0f0f0;
-}
-
 .command-line input {
     background-color: transparent;
     caret-color: transparent;
     border: none;
-    color: #f0f0f0;
-    font-family: 'Consolas', monospace;
-    font-size: 16px;
     outline: none;
-    width: calc(100% - 20px);
 }
 
 .help-text-container {
