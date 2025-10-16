@@ -19,7 +19,7 @@ body{
 
 .ascii-art pre {
     color: #f0f0f0;
-    font-size: 1vw;
+    font-size: 0.95vw;
 }
 
 .terminal-body {
@@ -40,4 +40,5 @@ body{
 .help-text-container {
     margin-right: 50px;
     margin-top: 0px;
+
 }
