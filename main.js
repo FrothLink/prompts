@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
     //"randomize" based on the day
     const today = new Date()
     let dayNum = (today.getFullYear() + (today.getMonth() + 1) + today.getDate() + (today.getDay() + 1))
-    let genreRan = genre[(today.getFullYear() + (today.getMonth() + 1) + today.getDate() * (today.getDay() + 1)) % genre.length]
+    let genreRan = genre[(today.getFullYear() + (today.getMonth() + 1) + today.getDate() % (today.getDay() + 1)) % genre.length]
     let ScharRan = Scharacter[dayNum % Scharacter.length]
     let FcharRan = Fcharacter[dayNum % Fcharacter.length]
     let SplaceRan = Splaces[dayNum % Splaces.length]
@@ -89,4 +89,5 @@ document.addEventListener('DOMContentLoaded', function() {
         makeElement()
     }
     AddDate()
+
 });
